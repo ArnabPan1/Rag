@@ -1,0 +1,31 @@
+indexing:
+    chunk_size: 1200
+    overlap: 200
+    quadrant_host: "localhost"
+    quadrant_port: 6333
+    collection_name: "earning_call_index"
+
+retrival:
+    topn: 5
+
+pdf_mapping:
+    '2023_Q3_AMZN': 'alice'
+    '2023_Q3_INTC': 'bob'
+    '2023_Q3_MSFT': 'bob'
+    '2023_Q3_NVDA': 'charlie'
+    '2023_Q3_AAPL': 'charlie'
+
+openai:
+    vllm_api_url: "https://f260d08e77b1.ngrok-free.app/v1"
+    model: "Qwen/Qwen2.5-0.5B-Instruct"
+    api_key: "EMPTY"
+    max_tokens: 4096
+    temperature: 0.7
+    top_p: 0.9
+    frequency_penalty: 0.0
+    presence_penalty: 0.0
+    use_conversation_history: true
+    
+
+
+filename: "all_pdf_chunk_mapping.csv"
